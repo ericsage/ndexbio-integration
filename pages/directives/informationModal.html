@@ -1,0 +1,17 @@
+<span ng-click="openMe()" ng-transclude></span>
+
+<script type="text/ng-template" id="information-modal.html">
+
+	<div class="modal-header">
+	    <h5 class="modal-title"><strong>{{title}}</strong></h5>
+	</div>
+
+	<div class="modal-body wrapLongLine">
+	    <strong>{{message}}</strong>
+	</div>
+
+	<div class="modal-footer">
+	    <button class="btn btn-default" ng-click="cancel()">Close</button>
+	</div>
+
+</script>

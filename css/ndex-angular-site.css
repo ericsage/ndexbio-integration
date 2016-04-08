@@ -1,0 +1,999 @@
+/******************************************************************************
+ * Styling by element
+ ******************************************************************************/
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: "Helvetica Neue", Helvetica, Geneva, Arial, Verdana, sans-serif;
+}
+
+body
+{
+
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right:0;
+    color: #333;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 18px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    height: 100%;
+}
+
+
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+b, strong
+{
+    font-weight: bold;
+}
+
+fieldset
+{
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+
+    font-weight: 200;
+    letter-spacing:1px;
+    //margin-bottom: 1em;
+}
+
+legend
+{
+    font-size: 1.5em;
+}
+
+label
+{
+    display: inline-block;
+}
+
+input[readonly],
+    textarea[readonly]
+{
+    background: #FFF;
+}
+
+input[type="number"]
+{
+    width: 5em;
+}
+
+input[type="search"]
+{
+    padding-left: 1.5em;
+}
+
+section
+{
+    position: relative;
+}
+
+tbody > tr:nth-child(odd)
+{
+    background: #EEE;
+    background: linear-gradient(center top, #F2F2F2, #EEE);
+    background: -moz-linear-gradient(center top, #F2F2F2, #EEE);
+    background: -ms-linear-gradient(center top, #F2F2F2, #EEE);
+    background: -o-linear-gradient(center top, #F2F2F2, #EEE);
+    background: -webkit-linear-gradient(top, #F2F2F2, #EEE);
+    border-top: 1px solid #DDD;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF", endColorstr="#DDD");
+}
+
+tbody > tr:nth-child(even)
+{
+    background: #CCC;
+    background: linear-gradient(center top, #EEE, #DDD);
+    background: -moz-linear-gradient(center top, #EEE, #DDD);
+    background: -ms-linear-gradient(center top, #EEE, #DDD);
+    background: -o-linear-gradient(center top, #EEE, #DDD);
+    background: -webkit-linear-gradient(top, #EEE, #DDD);
+    border-top: 1px solid #DDD;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#EEE", endColorstr="#DDD");
+}
+
+td
+{
+    margin: 0;
+    padding: 3px 7px;
+}
+
+th
+{
+    font-size: 1.15em;
+    //font-weight: bold;
+    margin: 0;
+    padding: 3px 7px;
+}
+
+textarea
+{
+    resize: none;
+}
+
+/******************************************************************************
+ * Styling by class
+ ******************************************************************************/
+.AlignCenter
+{
+    text-align: center;
+}
+
+.AlignLeft
+{
+    text-align: left;
+}
+
+.AlignRight
+{
+    text-align: right;
+}
+
+.Clear:after
+{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.Hand
+{
+    cursor: pointer;
+}
+
+.hero-unit
+{
+    border: 1px solid;
+    font-weight: 100;
+    background-color:#FFFFFF;
+}
+
+/******************************************************************************
+ Home / Sign-in Styles
+ ******************************************************************************/
+
+.home-margins
+{
+    margin: 20px;
+    padding: 10px;
+}
+
+.home-center
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.home-box
+{
+    border-radius: 20px;
+    border: 3px solid cornflowerblue;
+    /*min-height: 270px;*/
+    /*max-width: 250px;*/
+}
+
+.home-text
+{
+    font-size: 18px;
+}
+
+.home-advice
+{
+    font-size: 15px;
+}
+
+.home-support
+{
+    font-size: 11px;
+}
+
+.home-support-table
+{
+    background-color: white;
+    border-color: white;
+
+}
+
+.home-support-row
+{
+    backgroud: white;
+    border-top: none;
+}
+
+.home-support-table > tbody > tr:nth-child(odd)
+{
+    background: white;
+    border-top: none;
+}
+
+.home-support-table > tbody > tr:nth-child(even)
+{
+    background: white;
+    border-top: none;
+}
+
+
+.home-signed-in-user
+{
+    border-radius: 20px;
+    border: 3px solid cornflowerblue;
+    min-height: 40px;
+    max-width: 250px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    font-weight: 150;
+    font-size: 18px;
+    text-align: center;
+}
+
+.home-account
+{
+    margin-top:10px;
+    font-size: 22px;
+}
+
+/******************************************************************************
+ Footer Bar
+ ******************************************************************************/
+
+.footer-bar
+{
+    border-top: 1px solid #CCC;
+}
+
+.footer-content
+{
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-tap-highlight-color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.footer-content > a:link
+{
+    color: rgb(2, 114, 201);  /*NDEx blue*/
+}
+
+.footer-content > a:visited
+{
+    color: rgb(2, 114, 201);  /*NDEx blue*/
+}
+
+
+/******************************************************************************
+ * wrap and footer styling
+ ******************************************************************************/
+
+
+/* Wrapper for page content to push down footer */
+#main {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+    background: #fff;
+
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 20px;
+    border-top: 1px solid #CCC;
+    padding: 10;
+}
+
+
+/******************************************************************************
+ * Navigation styling
+ ******************************************************************************/
+
+.navbar
+{
+    min-height: 10px;
+}
+
+.navbar a
+{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.navbar-nav>li>a:focus
+{
+    background: black;
+}
+
+.navbar-nav>li>a:hover
+{
+    /*color: lightened black;*/
+    background: rgb(38,38,38);
+}
+
+
+
+.navbar-fixed-top
+{
+    font-size: 1.1em;
+    vertical-align: top;
+    letter-spacing:0px;
+    margin-bottom: 60px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/******************************************************************************
+ * Search styling
+ ******************************************************************************/
+#divSearch
+{
+    position: relative;
+    text-align: center;
+}
+
+#divSearch i.icon-search
+{
+    position: absolute;
+    left: 0.4em;
+    top: 0.5em;
+    z-index: 2;
+}
+
+#tblSearchResults
+{
+    width: 60%;
+}
+
+/******************************************************************************
+ * Accordion styling
+ ******************************************************************************/
+dl.Accordion
+{
+    display: block;
+}
+
+dl.Accordion > dt
+{
+    background: #0E5177;
+    background: linear-gradient(center top, #438EB9, #0E5177);
+    background: -moz-linear-gradient(center top, #438EB9, #0E5177);
+    background: -ms-linear-gradient(center top, #438EB9, #0E5177);
+    background: -o-linear-gradient(center top, #438EB9, #0E5177);
+    background: -webkit-linear-gradient(top, #438EB9, #0E5177);
+    color: #FFF;
+    cursor: pointer;
+    filter: progid : DXImageTransform . Microsoft . gradient(startColorstr = "#438EB9", endColorstr = "#0E5177");
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing:1px;
+    padding: 0.3em 0.6em;
+}
+
+dl.Accordion > dt.Expanded
+{
+    background: #246E98;
+    background: linear-gradient(center top, #3CA0D9, #246E98);
+    background: -moz-linear-gradient(center top, #3CA0D9, #246E98);
+    background: -ms-linear-gradient(center top, #3CA0D9, #246E98);
+    background: -o-linear-gradient(center top, #3CA0D9, #246E98);
+    background: -webkit-linear-gradient(top, #3CA0D9, #246E98);
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3CA0D9", endColorstr="#246E98");
+}
+
+dl.Accordion > dd
+{
+    background: #FFF;
+    line-height: 1.5em;
+    overflow: hidden;
+    margin: 0;
+    padding: 1em;
+}
+
+.accordionButton
+{
+    font-size: 8;
+    vertical-align: middle;
+}
+
+/******************************************************************************
+ * Login styling
+ ******************************************************************************/
+#divLogin
+{
+    margin: 0 auto;
+    width: 40%;
+}
+
+/******************************************************************************
+ * Join styling
+ ******************************************************************************/
+#divJoin
+{
+    margin: 0 auto;
+    width: 40%;
+}
+
+/******************************************************************************
+ * User/Group styling
+ ******************************************************************************/
+
+#imgProfile
+{
+    width: 100px;
+    left: 5%;
+    top: 10%;
+}
+
+#divUser
+{
+    padding-bottom: 20px;
+
+}
+
+#divUserTabs
+{
+
+}
+
+/******************************************************************************
+ * Network styling
+ ******************************************************************************/
+#dlNetwork
+{
+    background: #fff;
+}
+
+#divNetwork ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#dlNetworkAccordion > dt
+{
+    //display: none;
+}
+
+#dlNetworkAccordion > dd
+{
+    background: #FFFFFF;
+    display: block;
+    padding: 0;
+}
+
+#divNetwork h3 > input.Invisible
+{
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+
+#divNetworkProperties
+{
+    float: left;
+    width: 40%;
+}
+
+#divNetworkProperties textarea
+{
+    height: 60px;
+    width: 40%;
+}
+
+#divMetadata
+{
+    /*border-left: 1px solid #CCC;  */
+    float: right;
+    /*min-height: 200px;   */
+    padding-left: 3%;
+    width: 55%;
+}
+
+#divMetadata ul
+{
+    width: 100%;
+}
+
+#divMetadata ul i
+{
+    position: relative;
+    top: -0.35em;
+}
+
+#ddSearchNetwork
+{
+    margin-top: 25px;
+    color: #FFF;
+}
+
+#ddSearchNetwork ul > li > i
+{
+
+    cursor: move;
+}
+
+#ddSearchNetwork #divSearch
+{
+    display: inline-block;
+    margin-left: 10%;
+    //width: 235px;
+}
+
+#ddSearchNetwork dl.Accordion
+{
+    float: right;
+    width: 80%;
+}
+
+#ddSearchNetwork ul
+{
+    border: 1px dashed #C0C0C0;
+    height: 8.75em;
+    min-width: 200px;
+    overflow-y: auto;
+}
+
+#ddSearchNetwork ul > li
+{
+    color: #FFF;
+    font-size: 0.8em;
+    padding: 1px 3px;
+}
+
+#ulFilterableTerms > li,
+#ulTraversalTerms > li
+{
+    background: #555;
+    background: linear-gradient(center top, #444, #555);
+    background: -moz-linear-gradient(center top, #444, #555);
+    background: -ms-linear-gradient(center top, #444, #555);
+    background: -o-linear-gradient(center top, #444, #555);
+    background: -webkit-linear-gradient(top, #444, #555);
+    border-top: 1px solid #333;
+    filter: progid : DXImageTransform . Microsoft . gradient(startColorstr = "#444", endColorstr = "#555");
+}
+
+#ulTermFunctionsIncluded > li,
+#ulStartingTerms > li
+{
+    background: #005500;
+    background: linear-gradient(center top, #004400, #005500);
+    background: -moz-linear-gradient(center top, #004400, #005500);
+    background: -ms-linear-gradient(center top, #004400, #005500);
+    background: -o-linear-gradient(center top, #004400, #005500);
+    background: -webkit-linear-gradient(top, #004400, #005500);
+    border-top: 1px solid #003300;
+    filter: progid : DXImageTransform . Microsoft . gradient(startColorstr = "#004400", endColorstr = "#005500");
+}
+
+#ulTermsExcluded > li,
+#ulTermFunctionsExcluded > li,
+#ulTargetTerms > li
+{
+    background: #550000;
+    background: linear-gradient(center top, #440000, #550000);
+    background: -moz-linear-gradient(center top, #440000, #550000);
+    background: -ms-linear-gradient(center top, #440000, #550000);
+    background: -o-linear-gradient(center top, #440000, #550000);
+    background: -webkit-linear-gradient(top, #440000, #550000);
+    border-top: 1px solid #330000;
+    filter: progid : DXImageTransform . Microsoft . gradient(startColorstr = "#440000", endColorstr = "#550000");
+}
+
+#divSubnetwork
+{
+    OVERFLOW-Y: auto;
+}
+
+#divEdges
+{
+    border-top: 1px solid #666;
+    border-bottom: 3px solid #666;
+}
+
+#divNodes
+{
+    border-top: 1px solid #666;
+    border-bottom: 3px solid #666;
+}
+
+#ulSubnetwork li
+{
+    padding: 0.5em 0.55em;
+    background: #FFF;
+    background: linear-gradient(center top, #FFF, #d3d3d3);
+    background: -moz-linear-gradient(center top, #FFF, #d3d3d3);
+    background: -ms-linear-gradient(center top, #FFF, #d3d3d3);
+    background: -o-linear-gradient(center top, #FFF, #d3d3d3);
+    background: -webkit-linear-gradient(top, #FFF, #d3d3d3);
+    border-top: 1px solid #d3d3d3;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF", endColorstr="#d3d3d3");
+}
+
+#ulSubnetwork > li > strong:first-child
+{
+    display: inline-block;
+}
+
+#ulSubnetwork em
+{
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
+#ulSubnetwork > li > strong:last-child
+{
+    display: inline-block;
+}
+
+#ulSubnetwork > li.TermAliases
+{
+    background: #FFF;
+    display: none;
+    height: 0;
+}
+
+
+
+
+/******************************************************************************
+ * Windows-like icon styling
+ ******************************************************************************/
+.win8
+{
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    border: 1px solid #E3E3E3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 50px;
+    position: relative;
+    height: 30em;
+}
+
+.lightGray
+{
+    background-color: #D7FCFF;
+}
+
+.lightGrayBlue
+{
+    background-color: #E3F7FF;
+}
+
+#mainP
+{
+    margin-right: 8%;
+    position: absolute;
+    top: 50%;
+}
+
+.win8 h2
+{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.win8 button
+{
+    width: 50%;
+    position: absolute; /*--setting parent tag to a relative position and target tag to absolute position allows for fixed position to bottom of parent tag.*/
+    bottom: 3em;
+    right: 25%;
+    left: 25%;
+}
+
+/*angular ui fix for cursor*/
+a { cursor: pointer; }
+
+.cursorpointer {cursor: pointer; }
+.cursordefault {cursor: default; }
+
+/* Added by David Welker, September 26, 2014 */
+.indent
+{
+    margin-left: 20px;
+}
+
+.network-property-preview
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+    margin-top: 5px;
+    max-height: 250px;
+}
+
+.user-tasks-panel
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.tooltip-inner {
+    max-width: 500px;
+}
+
+.padded { padding: 5px; }
+
+.small-margin-right { margin-right: 10px;}
+
+.bordered { border: 1px solid;
+    border-color: lightgray;}
+
+.spacer {  margin-top: 5px; }
+
+.navbar-ndex-bottom
+{
+    background: #000;
+    border-top-color: white;
+}
+
+.navbar-ndex-top
+{
+    background: #000;
+    border-bottom-color: white;
+}
+
+hr {
+    border-color: #d3d3d3;
+}
+
+.black-border
+{
+    border: 1px solid black;
+}
+
+.red-border
+{
+    border: 1px solid red;
+}
+
+.gold-border
+{
+    border: 1px solid gold;
+}
+
+.lightgrey-border
+{
+    border: 1px solid lightgrey;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.orange
+{
+    background-color: orange;
+}
+
+.red
+{
+    background-color: red;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.grid-tooltip {
+    overflow: visible;
+    z-index: 9999999;
+    float: left;
+    color: blue;
+}
+
+.networkGrid
+{
+    /* specifying width 100% will cause Network table to be distorted
+    when switching tabs and resizing browser window.  See NDEX-578 */
+    /*width: 100%;*/
+    height: 640px;
+}
+
+.wrapLongLine {
+    word-wrap: break-word;
+}
+
+.rowWithTopAndBottomPad {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.rowWithTwoLinesTopPad {
+    padding-top: 2em;
+}
+
+.rowWithOneLineTopPad {
+    padding-top: 1em;
+}
+
+.rowWithOneLineBottomPad {
+    padding-bottom: 1em;
+}
+
+.rowWithFourLinesBottomPad {
+    padding-bottom: 4em;
+}
+
+.ndex-nav-pills {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* when hovering over li elements of ndex-nav-pills, change colors to the ones specified below */
+ul.ndex-nav-pills > li > a:hover {
+    background-color: #428bca;  /* default color of Bootstrap primary button */
+    color: white;
+    border-style: none;
+}
+
+/* used to add some space below button -- we use this to separate vertically-stacked buttons on MyAccount,
+    Network and Group Pages */
+.buttonWithMarginBottom .btn {
+    margin-bottom: 5px;
+}
+
+/* this sets the width of all vertically-stacked buttons on MyAccount,
+    Network and Group Pages to be the same */
+.customButtonWidth {
+    width: 180px !important;
+}
+
+/* this adds some space after <HR> on Network page */
+.hrMarginRight {
+    margin-right: 15px;
+}
+
+.rowWithTwoLinesTopPadAnd15EmFont {
+    padding-top: 2em;
+    font-size: 1.5em;
+}
+
+.rowWithTwoLinesTopPadAnd11EmFont {
+    padding-top: 2em;
+    font-size: 1.1em;
+}
+
+.hideLongLine {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* this makes the header menu to "collapse" into a menu button when
+max-width of the browser reaches the specified value; this is for NDEX-662 */
+@media (max-width: 1210px) {
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-right {
+        margin-left: -15px;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        max-height: 700px;
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+}
+/* the color of the collapsed menu bar in the header; this is for NDEX-662 */
+.icon-bar {
+    background-color: lightgrey !important;
+}
+
+.belNamespaceFileModal {
+    white-space: pre;
+    word-wrap: break-word;
+}
+
+.belNamespaceFileModalSize {
+    width: 850px;
+}
+
+.my-modal-body-size {
+    max-height: calc(100vh - 212px);
+    overflow-y: auto;
+}
+
+.ndex-citation-landing-page {
+    font-size:18px;
+    line-height:2;
+    margin:2em;
+    text-align: center;
+}
+
+
+/* the following classes (ta-toolbar, ta-toolbar.focussed ) only show textAngular toolbar when a
+ * textAngular-edited field (i.e., Description or Reference in Edit Profile Modal) is in focus. */
+.ta-toolbar {
+    display: none;
+}
+.ta-toolbar.focussed {
+    display: block;
+}
